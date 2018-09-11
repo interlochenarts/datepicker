@@ -35,6 +35,11 @@ class DatePicker {
   setCurrentDate(current) {
     self.datePicker.current = new Date(current);
   }
+  
+  // Allow weekends to be picked?
+  setAllowWeekends(allow) {
+    self.datePicker.weekends = allow;
+  }
 
   // Build modal behind date picker to close date picker... or something.
   buildOverlay() {
