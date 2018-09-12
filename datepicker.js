@@ -93,7 +93,7 @@ class DatePicker {
       var overlay = self.buildOverlay();
       containerDiv.appendChild(datePickerDiv);
       containerDiv.appendChild(overlay);
-      document.getElementsByClassName(self.datePicker.id)[0].parentElement.appendChild(containerDiv);
+      document.getElementById(self.datePicker.id).parentElement.appendChild(containerDiv);
       // disable buttons if necessary
       self.disableButtons();
     }
@@ -275,10 +275,10 @@ class DatePicker {
     }
 
     // Set the new value to the supplied field
-    document.getElementsByClassName(self.datePicker.id)[0].value = date.getFullYear() + '-' + (date.getMonth()+1) + '-' + date.getDate();
+    document.getElementById(self.datePicker.id).value = date.getFullYear() + '-' + (date.getMonth()+1) + '-' + date.getDate();
     // bubble up an onchange event to let the browser know the value has changed
     var event = new Event('change', {bubbles: true});
-    document.getElementsByClassName(self.datePicker.id)[0].dispatchEvent(event);
+    document.getElementById(self.datePicker.id).dispatchEvent(event);
 
     // Set the current date to the selected date
     self.datePicker.current = new Date(date);
