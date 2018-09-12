@@ -10,11 +10,9 @@ Add this datepicker to your page by including the .js file in your HTML, then in
       var thepicker = new DatePicker('birthday');
     </script>
     
-Where 'birthday' is the name of a class you are using to identify the HTML input you are using the datepicker with.
+Where 'birthday' is the id of the the HTML input you are using the datepicker with.
   
-    <input type="text" class="birthday">
-    
-We use a class to identify the HTML input instead of an 'id' because we want to use this with Salesforce Visualforce pages that change the 'id' of elements... this will probably be changed.
+    <input type="text" id="birthday">
 
 To envoke the datepicker, use the .buildDatePicker() function:
 
