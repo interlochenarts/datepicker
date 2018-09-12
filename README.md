@@ -32,7 +32,7 @@ To specify a minimum and maximum date, use the .setRange(String minDate, String 
 
     thepicker.setRange('2018-09-03','2019-12-23');
     
-To set the current date, use the .setCurrentDate(String date) function (if a current date isn't set, it defaults to today):
+To set the current date (today's date by default), use the .setCurrentDate(String date) function:
 
     thepicker.setCurrentDay('2018-09-05');
     
