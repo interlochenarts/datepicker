@@ -1,4 +1,4 @@
-class DatePicker {
+class MyDatePicker {
 
   // Pass in the id of the input and div to be used for the picker
   constructor(id) {
